@@ -11,16 +11,16 @@
 
 
 // Remote Paths
-def jacocoURL = 'https://raw.githubusercontent.com/opendatakit/gradle-config/master/jacoco.gradle'
-def variablesURL = 'https://raw.githubusercontent.com/opendatakit/gradle-config/' + gradle.ext.gradleConfigVersion + '/variables.gradle'
-def runnablesURL = 'https://raw.githubusercontent.com/opendatakit/gradle-config/' + gradle.ext.gradleConfigVersion + '/runnables.gradle'
+def jacocoURL = 'https://raw.githubusercontent.com/anandanarta/gradle-config/master/jacoco.gradle'
+def variablesURL = 'https://raw.githubusercontent.com/anandanarta/gradle-config/master/variables.gradle'
+def runnablesURL = 'https://raw.githubusercontent.com/anandanarta/gradle-config/master/runnables.gradle'
 
 logger.warn('gradle-config/remote.gradle -- gradle.ext.workspacePath: ' + gradle.ext.workspacePath)
 
 // Local Paths
-def jacocoLocalPath = gradle.ext.workspacePath + '/gradle-config/jacoco.gradle'
-def variablesLocalPath = gradle.ext.workspacePath + '/gradle-config/variables.gradle'
-def runnablesLocalPath = gradle.ext.workspacePath + '/gradle-config/runnables.gradle'
+def jacocoLocalPath = 'odk/gradle-config/jacoco.gradle'
+def variablesLocalPath = 'odk/gradle-config/variables.gradle'
+def runnablesLocalPath = 'odk/gradle-config/runnables.gradle'
 
 // The scripts to dispatch to each settings.gradle file -- N.B. is one directory level higher than others
 // due to the location of settings.gradle in each project
